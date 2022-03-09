@@ -19,6 +19,8 @@ The idea is to have a concise checklist for everything one might want to collect
   <li>Talisman locations</li>
   <li>Achievement requirements and associated locations</li>
   <li>Armor locations</li>
+  <li>Ashes of War Locations</li>
+  <li>Summoning Ashes Locations</li>
 </ul> etc etc.
 
 # Contributing to the cheat sheet
