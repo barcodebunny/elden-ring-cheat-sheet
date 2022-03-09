@@ -32,8 +32,7 @@
           <li class="active"><a href="#tabOpenWorld" data-toggle="tab" data-target="#tabOpenWorld,#btnHideCompleted">Open World</a></li>
           <li><a href="#tabAchievements" data-toggle="tab" data-target="#tabAchievements,#btnHideCompleted">Achievements</a></li>
           <li><a href="#tabArmaments" data-toggle="tab" data-target="#tabArmaments,#btnHideCompleted">Armaments</a></li>
-          <li><a href="#tabArmours" data-toggle="tab" data-target="#tabArmours,#btnHideCompleted">Armor</a></li>
-          <li><a href="#tabTalismans" data-toggle="tab" data-target="#tabTalismans,#btnHideCompleted">Talismans</a></li>
+          <li><a href="#tabArmours" data-toggle="tab" data-target="#tabArmours,#btnHideCompleted">Talisman/Armour</a></li>
           <li><a href="#tabSpells" data-toggle="tab" data-target="#tabSpells,#btnHideCompleted">Sorceries/Incantations</a></li>
           <li><a href="#tabAshes" data-toggle="tab" data-target="#tabAshes,#btnHideCompleted">Ashes</a></li>
           <li><a href="#tabKeys" data-toggle="tab" data-target="#tabKeys,#btnHideCompleted">Key Items</a></li>
@@ -469,7 +468,7 @@
         </div>
 
         <div id="item_list">
-          <h3 id="Legendary_Armaments"><a href="#Legendary_Armaments_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="">Legendary Armaments</a>: Acquire all legendary armaments<span id="checklist_totals_1"></span></h3>
+          <h3 id="Legendary_Armaments"><a href="#Legendary_Armaments_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="">Legendary Armaments</a><span id="checklist_totals_1"></span></h3>
           <ul id="Legendary_Armaments_col" class="collapse in">
             <li data-id="checklist_1_1"><a href="">Grafted Blade Greatsword</a>: Reward for defeating Lionine Misbegotten in Castle Morne</li>
             <li data-id="checklist_1_2"><a href="">Marais Executioner's Sword</a>: Reward for defeating Elemer in the Shaded Castle</li>
@@ -482,7 +481,7 @@
             <li data-id="checklist_1_9"><a href="">Dark Moon Greatsword</a>: Reward for completing Ranni's questline, and securing the Age of the Stars ending</li>
           </ul>
 
-          <h3 id="Legendary_Ashen_Remains"><a href="#Legendary_Ashen_Remains_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="">Legendary Ashen Remains</a>: Acquire all<span id="checklist_totals_2"></span></h3>
+          <h3 id="Legendary_Ashen_Remains"><a href="#Legendary_Ashen_Remains_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="">Legendary Ashen Remains</a><span id="checklist_totals_2"></span></h3>
           <ul id="Legendary_Ashen_Remains_col" class="collapse in">
             <li data-id="checklist_2_1"><a href="">Lhutel the Headless</a>: Found in Tombsword Catacombs, west of the Minor Erdtree in Weeping Peninsula</li>
             <li data-id="checklist_2_2"><a href="">Black Knife Tiche</a>: Reward for clearing Ringleader's Evergaol in the Northwest of Moonlight Plateau</li>
@@ -492,7 +491,7 @@
             <li data-id="checklist_2_6"><a href="">Cleanrot Knight Finlay</a>: Found near the Prayer Room Site of Grace in Elphael</li>
           </ul>
 
-          <h3 id="Legendary_Spells"><a href="#Legendary_Spells_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="">Legendary Sorceries and Incantations</a>: Acquire all<span id="checklist_totals_3"></span></h3>
+          <h3 id="Legendary_Spells"><a href="#Legendary_Spells_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="">Legendary Sorceries and Incantations</a><span id="checklist_totals_3"></span></h3>
           <ul id="Legendary_Spells_col" class="collapse in">
             <h4>Sorceries</h4>
             <li data-id="checklist_3_1"><a href="">Founding Rain of Stars</a>: Found in Heretical Rise in East Mountaintops of the Giants</li>
@@ -505,7 +504,7 @@
             <li data-id="checklist_3_7"><a href="https://eldenring.wiki.fextralife.com/Greyoll's+Roar">Greyoll's Roar</a>: Kill Greyoll, then purchase from Cathedral of Dragon Communion</li>
           </ul>
 
-          <h3 id="Legendary_Talismans"><a href="#Legendary_Talismans_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="">Legendary Talismans</a>: Acquire all<span id="checklist_totals_4"></span></h3>
+          <h3 id="Legendary_Talismans"><a href="#Legendary_Talismans_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="">Legendary Talismans</a><span id="checklist_totals_4"></span></h3>
           <ul id="Legendary_Talismans_col" class="collapse in">
             <li data-id="checklist_4_1"><a href="https://eldenring.wiki.fextralife.com/Radagon+Icon">Radagon Icon</a>: Found in Raya Lucaria. From the Debate Parlor Site of Grace, step outside then immediately head right</li>
             <li data-id="checklist_4_2"><a href="https://eldenring.wiki.fextralife.com/Radagon's+Soreseal">Radagon Soreseal</a>: Found in Fort Faroth. Visible upon entering the fort. The room it resides in can be dropped down into from the catwalk above it</li>
@@ -1071,10 +1070,11 @@
         </div>
       </div>
 
-      <!-- ARMOR START -->
+      <!-- TALISMAN/ARMOR START -->
       <div class="tab-pane" id="tabArmours">
-        <h2>Armor Checklists <span id="armors_overall_total"></span></h2>
+        <h2>Talisman and Armour Checklists <span id="armors_overall_total"></span></h2>
         <ul class="table_of_contents">
+          <li><a href="#Helms">Talismans</a> <span id="armors_nav_totals_5"></span></li>
           <li><a href="#Helms">Head</a> <span id="armors_nav_totals_1"></span></li>
           <li><a href="#Chests">Chest</a> <span id="armors_nav_totals_2"></span></li>
           <li><a href="#Gauntlets">Hands</a> <span id="armors_nav_totals_3"></span></li>
@@ -1086,18 +1086,138 @@
         </div>
 
         <div id="armors_list">
+          <h3 id="Talismans"><a href="#Talismans_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://eldenring.wiki.fextralife.com/Talismans">Talismans</a> <span id="armors_totals_5"></span></h3>
+          <ul id="Talismans_col" class="collapse in">
+            <li data-id="armors_5_1"><a href="">Crimson Amber Medallion</a></li>
+            <li data-id="armors_5_2"><a href="">Crimson Amber Medallion +1</a></li>
+            <li data-id="armors_5_3"><a href="">Crimson Amber Medallion +2</a></li>
+            <li data-id="armors_5_4"><a href="">Cerulean Amber Medallion</a></li>
+            <li data-id="armors_5_5"><a href="">Cerulean Amber Medallion +1</a></li>
+            <li data-id="armors_5_6"><a href="">Cerulean Amber Medallion +2</a></li>
+            <li data-id="armors_5_7"><a href="">Viridian Amber Medallion</a></li>
+            <li data-id="armors_5_8"><a href="">Viridian Amber Medallion +1</a></li>
+            <li data-id="armors_5_9"><a href="">Viridian Amber Medallion +2</a></li>
+            <li data-id="armors_5_10"><a href="">Arsenal Charm</a></li>
+            <li data-id="armors_5_11"><a href="">Great-Jar's Arsenal</a></li>
+            <li data-id="armors_5_12"><a href="">Erdtree's Favor</a></li>
+            <li data-id="armors_5_13"><a href="">Erdtree's Favor +1</a></li>
+            <li data-id="armors_5_14"><a href="">Erdtree's Favor +2</a></li>
+            <li data-id="armors_5_15"><a href="">Radagon's Scarseal</a></li>
+            <li data-id="armors_5_16"><a href="">Radagon's Soreseal</a></li>
+            <li data-id="armors_5_17"><a href="">Starscourge Heirloom</a></li>
+            <li data-id="armors_5_18"><a href="">Prosthesis-Wearer Heirloom</a></li>
+            <li data-id="armors_5_19"><a href="">Stargazer Heirloom</a></li>
+            <li data-id="armors_5_20"><a href="">Two Fingers Heirloom</a></li>
+            <li data-id="armors_5_21"><a href="">Silver Scarab</a></li>
+            <li data-id="armors_5_22"><a href="">Gold Scarab</a></li>
+            <li data-id="armors_5_23"><a href="">Moon of Nokstella</a></li>
+            <li data-id="armors_5_24"><a href="">Green Turtle Talisman</a></li>
+            <li data-id="armors_5_25"><a href="">Stalwart Horn Charm</a></li>
+            <li data-id="armors_5_26"><a href="">Stalwart Horn Charm +1</a></li>
+            <li data-id="armors_5_27"><a href="">Immunizing Horn Charm</a></li>
+            <li data-id="armors_5_28"><a href="">Immunizing Horn Charm +1</a></li>
+            <li data-id="armors_5_29"><a href="">Clarifying Horn Charm</a></li>
+            <li data-id="armors_5_30"><a href="">Clarifying Horn Charm +1</a></li>
+            <li data-id="armors_5_31"><a href="">Prince of Death's Pustule</a></li>
+            <li data-id="armors_5_32"><a href="">Mottled Necklace</a></li>
+            <li data-id="armors_5_33"><a href="">Bull-Goat's Talisman</a></li>
+            <li data-id="armors_5_34"><a href="">Marika's Scarseal</a></li>
+            <li data-id="armors_5_35"><a href="">Marika's Soreseal</a></li>
+            <li data-id="armors_5_36"><a href="">Warrior Jar Shard</a></li>
+            <li data-id="armors_5_37"><a href="">Shard of Alexander</a></li>
+            <li data-id="armors_5_38"><a href="">Millicent's Prosthesis</a></li>
+            <li data-id="armors_5_39"><a href="">Magic Scorpion Charm</a></li>
+            <li data-id="armors_5_40"><a href="">Lightning Scorpion Charm</a></li>
+            <li data-id="armors_5_41"><a href="">Fire Scorpion Charm</a></li>
+            <li data-id="armors_5_42"><a href="">Sacred Scorpion Charm</a></li>
+            <li data-id="armors_5_43"><a href="">Red-Feathered Branchsword</a></li>
+            <li data-id="armors_5_44"><a href="">Ritual Sword Talisman</a></li>
+            <li data-id="armors_5_45"><a href="">Spear Talisman</a></li>
+            <li data-id="armors_5_46"><a href="">Hammer Talisman</a></li>
+            <li data-id="armors_5_47"><a href="">Winged Sword Insignia</a></li>
+            <li data-id="armors_5_48"><a href="">Rotten Winged Sword Insignia</a></li>
+            <li data-id="armors_5_49"><a href="">Dagger Talisman</a></li>
+            <li data-id="armors_5_50"><a href="">Arrow's Reach Talisman</a></li>
+            <li data-id="armors_5_51"><a href="">Blue Dancer Charm</a></li>
+            <li data-id="armors_5_52"><a href="">Twinblade Talisman</a></li>
+            <li data-id="armors_5_53"><a href="">Axe Talisman</a></li>
+            <li data-id="armors_5_54"><a href="">Lance Talisman</a></li>
+            <li data-id="armors_5_55"><a href="">Arrow's Sting Talisman</a></li>
+            <li data-id="armors_5_56"><a href="">Lord of Blood's Exultation</a></li>
+            <li data-id="armors_5_57"><a href="">Kindred of Rot's Exultation</a></li>
+            <li data-id="armors_5_58"><a href="">Claw Talisman</a></li>
+            <li data-id="armors_5_59"><a href="">Roar Medallion</a></li>
+            <li data-id="armors_5_60"><a href="">Curved Sword Talisman</a></li>
+            <li data-id="armors_5_61"><a href="">Companion jar</a></li>
+            <li data-id="armors_5_62"><a href="">Perfumer's Talisman</a></li>
+            <li data-id="armors_5_63"><a href="">Graven-School Talisman</a></li>
+            <li data-id="armors_5_64"><a href="">Graven-Mass Talisman</a></li>
+            <li data-id="armors_5_65"><a href="">Faithful's Canvas Talisman</a></li>
+            <li data-id="armors_5_66"><a href="">Flock's Canvas Talisman</a></li>
+            <li data-id="armors_5_67"><a href="">Old Lord's Talisman</a></li>
+            <li data-id="armors_5_68"><a href="">Radagon Icon</a></li>
+            <li data-id="armors_5_69"><a href="">Primal Glintstone Blade</a></li>
+            <li data-id="armors_5_70"><a href="">Godfrey Icon</a></li>
+            <li data-id="armors_5_71"><a href="">Dragoncrest Shield Talisman</a></li>
+            <li data-id="armors_5_72"><a href="">Dragoncrest Shield Talisman +1</a></li>
+            <li data-id="armors_5_73"><a href="">Dragoncrest Shield Talisman +2</a></li>
+            <li data-id="armors_5_74"><a href="">Dragoncrest Greatshield Talisman</a></li>
+            <li data-id="armors_5_75"><a href="">Spelldrake Talisman</a></li>
+            <li data-id="armors_5_76"><a href="">Spelldrake Talisman +1</a></li>
+            <li data-id="armors_5_77"><a href="">Spelldrake Talisman +2</a></li>
+            <li data-id="armors_5_78"><a href="">Flamedrake Talisman</a></li>
+            <li data-id="armors_5_79"><a href="">Flamedrake Talisman +1</a></li>
+            <li data-id="armors_5_80"><a href="">Flamedrake Talisman +2</a></li>
+            <li data-id="armors_5_81"><a href="">Boltdrake Talisman</a></li>
+            <li data-id="armors_5_82"><a href="">Boltdrake Talisman +1</a></li>
+            <li data-id="armors_5_83"><a href="">Boltdrake Talisman +2</a></li>
+            <li data-id="armors_5_84"><a href="">Haligdrake Talisman</a></li>
+            <li data-id="armors_5_85"><a href="">Haligdrake Talisman +1</a></li>
+            <li data-id="armors_5_86"><a href="">Haligdrake Talisman +2</a></li>
+            <li data-id="armors_5_87"><a href="">Pearldrake Talisman</a></li>
+            <li data-id="armors_5_88"><a href="">Pearldrake Talisman +1</a></li>
+            <li data-id="armors_5_89"><a href="">Pearldrake Talisman +2</a></li>
+            <li data-id="armors_5_90"><a href="">Crucible Scale Talisman</a></li>
+            <li data-id="armors_5_91"><a href="">Crucible Feather Talisman</a></li>
+            <li data-id="armors_5_92"><a href="">Blue-Feathered Branchsword</a></li>
+            <li data-id="armors_5_93"><a href="">Ritual Shield Talisman</a></li>
+            <li data-id="armors_5_94"><a href="">Greatshield Talisman</a></li>
+            <li data-id="armors_5_95"><a href="">Crucible Knot Talisman</a></li>
+            <li data-id="armors_5_96"><a href="">Crimson Seed Talisman</a></li>
+            <li data-id="armors_5_97"><a href="">Cerulean Seed Talisman</a></li>
+            <li data-id="armors_5_98"><a href="">Blessed Dew Talisman</a></li>
+            <li data-id="armors_5_99"><a href="">Taker's Cameo</a></li>
+            <li data-id="armors_5_100"><a href="">Godskin Swaddling Cloth</a></li>
+            <li data-id="armors_5_101"><a href="">Assassin's Crimson Dagger</a></li>
+            <li data-id="armors_5_102"><a href="">Assassin's Cerulean Dagger</a></li>
+            <li data-id="armors_5_103"><a href="">Crepus's Vial</a></li>
+            <li data-id="armors_5_104"><a href="">Concealing Veil</a></li>
+            <li data-id="armors_5_105"><a href="">Carian Filigreed Crest</a></li>
+            <li data-id="armors_5_106"><a href="">Longtail Cat Talisman</a></li>
+            <li data-id="armors_5_107"><a href="">Shabriri's Woe</a></li>
+            <li data-id="armors_5_108"><a href="">Daedicar's Woe</a></li>
+            <li data-id="armors_5_109"><a href="">Sacrificial Twig</a></li>
+            <li data-id="armors_5_110"><a href="">Furled Finger's Trick-Mirror</a></li>
+            <li data-id="armors_5_111"><a href="">Host's Trick-Mirror</a></li>
+            <li data-id="armors_5_112"><a href="">Entwining Umbilical Cord</a></li>
+            <li data-id="armors_5_113"><a href="">Ancestral Spirit's Horn</a></li>
+          </ul>
+
           <h3 id="Helms"><a href="#Helms_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://eldenring.wiki.fextralife.com/Helms">Helms</a> <span id="armors_totals_1"></span></h3>
           <ul id="Helms_col" class="collapse in">
             <li data-id="armors_1_1"><a href=""></a></li>
           </ul>
+
           <h3 id="Chests"><a href="#Chests_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://eldenring.wiki.fextralife.com/Chest+Armor">Chest Armour</a> <span id="armors_totals_2"></span></h3>
           <ul id="Chests_col" class="collapse in">
             <li data-id="armors_2_1"><a href=""></a></li>
           </ul>
+
           <h3 id="Gauntlets"><a href="#Gauntlets_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://eldenring.wiki.fextralife.com/Gauntlets">Gauntlets</a> <span id="armors_totals_3"></span></h3>
           <ul id="Gauntlets_col" class="collapse in">
             <li data-id="armors_3_1"><a href=""></a></li>
           </ul>
+
           <h3 id="Leggings"><a href="#Leggings_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://eldenring.wiki.fextralife.com/Leg+Armor">Leg Armour</a> <span id="armors_totals_4"></span></h3>
           <ul id="Leggings_col" class="collapse in">
             <li data-id="armors_4_1"><a href=""></a></li>
@@ -1328,7 +1448,8 @@
           <li><a href="#Memory_Stones">Memory Stones</a> <span id="keys_nav_totals_3"></span></li>
           <li><a href="#Cracked_Pots">Cracked Pots</a> <span id="keys_nav_totals_4"></span></li>
           <li><a href="#Crystal_Tears">Crystal Tears</a> <span id="keys_nav_totals_5"></span></li>
-
+          <li><a href="#Bell_Bearings">Bell-Bearings</a> <span id="keys_nav_totals_6"></span></li>
+          <li><a href="#Cookbooks">Cookbooks</a> <span id="keys_nav_totals_7"></span></li>
         </ul>
 
         <div class="form-group">
@@ -1451,7 +1572,7 @@
             <li data-id="keys_3_3">Reward for defeating the <a href="https://eldenring.wiki.fextralife.com/Red+Wolf+of+Radagon">Red Wolf of Radagon</a></li>
             <li data-id="keys_3_4">Found in a chest at the top floor of <a href="https://eldenring.wiki.fextralife.com/Testu's+Rise">Testu's Rise</a></li>
             <li data-id="keys_3_5">Found in a chest at the top floor of <a href="https://eldenring.wiki.fextralife.com/Seluvis's+Rise">Seluvis' Rise</a></li>
-            <li data-id="keys_3_6">Reward for defeating <a href="https://eldenring.wiki.fextralife.com/Demi-Human+Queen+Maggie">Demi-Human Queen Maggie</a>, Northeast of<a href="https://eldenring.wiki.fextralife.com/Hermit+Village">Hermit Village</a> in Mt.Gelmir</li>
+            <li data-id="keys_3_6">Reward for defeating <a href="https://eldenring.wiki.fextralife.com/Demi-Human+Queen+Maggie">Demi-Human Queen Maggie</a>, Northeast of <a href="https://eldenring.wiki.fextralife.com/Hermit+Village">Hermit Village</a> in Mt.Gelmir</li>
             <li data-id="keys_3_7">Found in a chest on the top floor of <a href="https://eldenring.wiki.fextralife.com/Lenne's+Rise">Lenne's Rise</a></li>
             <li data-id="keys_3_8">Purchased from the <a href="https://eldenring.wiki.fextralife.com/Twin+Maiden+Husks">Twin Maiden Husks</a> at the<a href="https://eldenring.wiki.fextralife.com/Roundtable+Hold">Roundtable Hold</a> for 3000 runes</li>
           </ul>
