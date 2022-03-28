@@ -567,7 +567,14 @@ var profilesKey = 'darksouls3_profiles';
         }), new Jets({
             searchTag: '#armors_search',
             contentTag: '#armors_list ul'
-        })];
+        }), new Jets({
+            searchTag: "#keys_search",
+            contentTag: "#keys_list ul"
+        }), new Jets({
+            searchTag: "#spells_search",
+            contentTag: "#spells_list ul"
+        })
+        ];
 
         $('#playthrough_search').keyup(function() {
             $('#playthrough_list').unhighlight();
@@ -584,6 +591,14 @@ var profilesKey = 'darksouls3_profiles';
         $('#armors_search').keyup(function() {
             $('#armors_list').unhighlight();
             $('#armors_list').highlight($(this).val());
+        });
+        $('#keys_search').keyup(function() {
+            $('#keys_list').unhighlight();
+            $('#keys_list').highlight($(this).val());
+        });
+        $('#spells_search').keyup(function() {
+            $('#spells_list').unhighlight();
+            $('#spells_list').highlight($(this).val());
         });
     });
 
