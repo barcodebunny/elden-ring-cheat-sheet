@@ -1,4 +1,5 @@
-var profilesKey = 'darksouls3_profiles';
+var oldProfilesKey = 'darksouls3_profiles';
+var profilesKey = 'eldenring_profiles';
 
 (function($) {
     'use strict';
@@ -22,7 +23,21 @@ var profilesKey = 'darksouls3_profiles';
         "Yeti" : "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css"
     };
 
-    var profiles = $.jStorage.get(profilesKey, {});
+    var profiles = {};
+
+    // Check if old darksouls3_profiles exist - copy to eldenring_profiles ("backward compatibility")
+    var oldProfiles = $.jStorage.get(oldProfilesKey, {});
+    if (Object.keys(oldProfiles).length != 0) {
+        console.log(oldProfiles);
+        profiles.current = oldProfiles.current;
+        profiles[profilesKey] = oldProfiles[oldProfilesKey];
+        console.log(profiles);
+        $.jStorage.deleteKey(oldProfilesKey);
+    }
+    else {
+        // Load elden ring profiles
+        profiles = $.jStorage.get(profilesKey, {});
+    }
 
     /// assure default values are set
     /// necessary 'cause we're abusing local storage to store JSON data
