@@ -588,6 +588,9 @@ var profilesKey = 'eldenring_profiles';
         }), new Jets({
             searchTag: "#spells_search",
             contentTag: "#spells_list ul"
+        }), new Jets({
+            searchTag: "#misc_search",
+            contentTag: "#misc_list ul"
         })
         ];
 
@@ -614,6 +617,10 @@ var profilesKey = 'eldenring_profiles';
         $('#spells_search').keyup(function() {
             $('#spells_list').unhighlight();
             $('#spells_list').highlight($(this).val());
+        });
+        $('#misc_search').keyup(function() {
+            $('#misc_list').unhighlight();
+            $('#misc_list').highlight($(this).val());
         });
     });
 
