@@ -572,7 +572,7 @@ var profilesKey = 'eldenring_profiles';
     $(function() {
         var jets = [new Jets({
             searchTag: '#playthrough_search',
-            contentTag: '#playthrough_list ul'
+            contentTag: '#playthrough_list h4, #playthrough_list ul'
         }), new Jets({
             searchTag: '#item_search',
             contentTag: '#item_list h4, #item_list ul'// This does not mean that we are searching inside the content of both <h4> and <ul> tags
@@ -584,10 +584,10 @@ var profilesKey = 'eldenring_profiles';
             contentTag: '#armors_list ul'
         }), new Jets({
             searchTag: "#keys_search",
-            contentTag: "#keys_list ul"
+            contentTag: "#keys_list h4, #keys_list ul"
         }), new Jets({
             searchTag: "#spells_search",
-            contentTag: "#spells_list ul"
+            contentTag: "#spells_list h4, #spells_list ul"
         }), new Jets({
             searchTag: "#misc_search",
             contentTag: "#misc_list ul"
