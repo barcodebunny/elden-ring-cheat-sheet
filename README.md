@@ -1,5 +1,7 @@
 # Elden Ring cheat sheet
 
+### all credit goes to barcodebunny
+
 [Link to the site here](https://ath42.github.io/elden-ring-cheat-sheet/).
 
 Based heavily on previous works by adopting code from [Zachary Kjellberg](https://github.com/ZKjellberg) and [Stephen McNabb](https://github.com/smcnabb):  
