@@ -1,6 +1,6 @@
 # Elden Ring cheat sheet
 
-[Link to the site here](https://barcodebunny.github.io/elden-ring-cheat-sheet/).
+[Link to the site here](https://ath42.github.io/elden-ring-cheat-sheet/).
 
 Based heavily on previous works by adopting code from [Zachary Kjellberg](https://github.com/ZKjellberg) and [Stephen McNabb](https://github.com/smcnabb):  
 [Dark Souls 2 Cheat Sheet](https://github.com/smcnabb/dark-souls-2-cheat-sheet/tree/gh-pages)  
